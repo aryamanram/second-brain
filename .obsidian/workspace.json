@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "2eb9648c195d1c93",
+            "id": "436e592b08e03192",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -22,49 +22,29 @@
             }
           },
           {
-            "id": "fb9fc05ef53f0adb",
+            "id": "1ed8a9258d75c828",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "raw/articles/Post by @karpathy on X.md",
-                "mode": "source",
-                "source": false
+                "file": "raw/papers/Building a Digital Brain for Research.pdf"
               },
-              "icon": "lucide-file",
-              "title": "Post by @karpathy on X"
+              "icon": "lucide-file-text",
+              "title": "Building a Digital Brain for Research"
             }
           },
           {
-            "id": "3eec496fbb812347",
+            "id": "815cf51fb65d99c0",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "raw/articles/Andrej Karpathy.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Andrej Karpathy"
-            }
-          },
-          {
-            "id": "8f3cd2c2c9c30941",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "raw/articles/Andrej Karpathy.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Andrej Karpathy"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -226,8 +206,24 @@
       "bases:Create new base": false
     }
   },
-  "active": "8f3cd2c2c9c30941",
+  "active": "815cf51fb65d99c0",
   "lastOpenFiles": [
+    "raw/papers/Building a Digital Brain for Research.pdf",
+    "log.md",
+    "index.md",
+    "wiki/concepts/knowledge-graph.md",
+    "double brackets.md",
+    "raw/articles/Post by @karpathy on X.md",
+    "raw/articles/Andrej Karpathy.md",
+    "wiki/concepts/maintenance-cadence.md",
+    "wiki/concepts/para-method.md",
+    "wiki/concepts/lazy-obsidian-method.md",
+    "wiki/entities/qmd.md",
+    "wiki/entities/obsidian-skills.md",
+    "wiki/entities/kepano.md",
+    "wiki/entities/bryce-robbie.md",
+    "wiki/sources/lazy-obsidian-method-brief.md",
+    "raw/papers/obsidian-lazy-method-brief.pdf",
     "wiki/syntheses/llm-knowledge-base-toolchain.md",
     "wiki/sources/wikipedia-andrej-karpathy.md",
     "wiki/sources/schrepel-digital-brain-for-research.md",
@@ -239,22 +235,6 @@
     "wiki/entities/tesla.md",
     "wiki/entities/stanford-university.md",
     "wiki/entities/safi-shamsi.md",
-    "wiki/entities/openai.md",
-    "wiki/entities/obsidian.md",
-    "wiki/entities/markitdown.md",
-    "wiki/entities/graphify.md",
-    "wiki/entities/fei-fei-li.md",
-    "wiki/entities/eureka-labs.md",
-    "wiki/entities/claude-code.md",
-    "wiki/entities/anthropic.md",
-    "wiki/entities/andrej-karpathy.md",
-    "wiki/concepts/hypothesis-register.md",
-    "wiki/concepts/graph-diagnostics.md",
-    "wiki/concepts/god-nodes.md",
-    "wiki/concepts/ecosystem-theory-of-harm.md",
-    "wiki/concepts/digital-brain.md",
-    "wiki/concepts/computational-antitrust.md",
-    "raw/papers/Building a Digital Brain for Research.pdf",
     "Untitled",
     "wiki/questions",
     "wiki/comparisons",
@@ -262,7 +242,6 @@
     "wiki/syntheses",
     "wiki/concepts",
     "wiki/entities",
-    "wiki/sources",
-    "wiki"
+    "wiki/sources"
   ]
 }

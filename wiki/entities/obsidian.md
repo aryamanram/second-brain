@@ -2,7 +2,7 @@
 title: "Obsidian"
 tags: [tool, markdown, knowledge-management, entity]
 date_created: 2026-05-30
-date_updated: 2026-05-30
+date_updated: 2026-06-03
 sources: [raw/articles/Post by @karpathy on X.md, raw/papers/Building a Digital Brain for Research.pdf]
 ---
 
@@ -28,6 +28,8 @@ topic pages, mirroring the underlying [[knowledge-graph]] community structure.
 ## Related Pages
 - [[karpathy-llm-knowledge-bases]]
 - [[schrepel-digital-brain-for-research]]
+- [[lazy-obsidian-method]]
+- [[obsidian-skills]]
 - [[andrej-karpathy]]
 - [[llm-knowledge-base]]
 - [[knowledge-graph]]

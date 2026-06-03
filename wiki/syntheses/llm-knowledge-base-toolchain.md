@@ -2,7 +2,7 @@
 title: "The LLM Knowledge-Base Toolchain"
 tags: [synthesis, llm, knowledge-management, knowledge-graph, tooling]
 date_created: 2026-06-01
-date_updated: 2026-06-01
+date_updated: 2026-06-03
 sources: [raw/articles/Post by @karpathy on X.md, raw/papers/Building a Digital Brain for Research.pdf, raw/articles/Andrej Karpathy.md]
 ---
 
@@ -72,6 +72,18 @@ product thesis in [[raw-directory-as-product]].
   pipeline.
 - [[safi-shamsi]] — built [[graphify]], the graph-extraction engine.
 - **Microsoft** — [[markitdown]] (the conversion step).
+- **tobi** — [[qmd]], the markdown search/retrieval tool this wiki uses.
+- [[kepano]] (Steph Ango) — [[obsidian-skills]], vault workflow patterns.
+
+## A packaged instantiation: the Lazy Obsidian Method
+
+[[bryce-robbie]]'s [[lazy-obsidian-method]] ([[lazy-obsidian-method-brief]]) is a
+ready-made assembly of much of this toolchain for non-experts: [[obsidian]] +
+Karpathy's [[llm-knowledge-base]] method + [[graphify]] + [[qmd]], plus two ingredients
+the other sources underemphasize — an explicit folder taxonomy ([[para-method]]) and an
+automated [[maintenance-cadence]] (daily/nightly/weekly jobs). It is evidence that the
+"hacky collection of scripts" Karpathy described is already congealing into shareable
+recipes (cf. [[raw-directory-as-product]]).
 
 ## Open threads
 
@@ -88,10 +100,16 @@ product thesis in [[raw-directory-as-product]].
 - [[karpathy-vs-schrepel-digital-brain]]
 - [[karpathy-llm-knowledge-bases]]
 - [[schrepel-digital-brain-for-research]]
+- [[lazy-obsidian-method]]
+- [[lazy-obsidian-method-brief]]
 - [[graphify]]
 - [[markitdown]]
+- [[qmd]]
 - [[claude-code]]
 - [[obsidian]]
+- [[obsidian-skills]]
+- [[para-method]]
+- [[maintenance-cadence]]
 - [[vibe-coding]]
 - [[six-step-research-protocol]]
 - [[retrieval-augmented-generation]]

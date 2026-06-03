@@ -8,6 +8,7 @@ Updated by the LLM after every ingest operation.
 - [[karpathy-llm-knowledge-bases]] — Karpathy's X post on using LLMs to build/maintain personal knowledge bases (the pattern this wiki implements). `raw/articles/Post by @karpathy on X.md`
 - [[schrepel-digital-brain-for-research]] — Schrepel's methodology guide turning a PDF corpus into a queryable knowledge graph + wiki; extends Karpathy into a research instrument. `raw/papers/Building a Digital Brain for Research.pdf`
 - [[wikipedia-andrej-karpathy]] — Wikipedia biography of Karpathy: life, education, OpenAI/Tesla/Anthropic career, "vibe coding." `raw/articles/Andrej Karpathy.md`
+- [[lazy-obsidian-method-brief]] — Bryce Robbie field note: a low-maintenance stack (Obsidian + Karpathy wiki + PARA + Graphify + QMD) with automated daily/nightly/weekly jobs. `raw/papers/obsidian-lazy-method-brief.pdf`
 
 ## Entities
 
@@ -25,6 +26,10 @@ Updated by the LLM after every ingest operation.
 - [[eureka-labs]] — Karpathy's AI-education company (founded 2024).
 - [[stanford-university]] — Karpathy's PhD (2015) and where he taught CS 231n; also Schrepel's affiliation.
 - [[university-of-toronto]] — Karpathy's undergraduate institution (CS + Physics, 2009).
+- [[bryce-robbie]] — Author of the "Lazy Obsidian Method" field note.
+- [[kepano]] — Steph Ango; creator of Obsidian Skills.
+- [[obsidian-skills]] — Kepano's vault workflow patterns (the "Workflow" layer).
+- [[qmd]] — Markdown search/retrieval tool (by tobi); the search layer, also used by this wiki.
 
 ## Concepts
 
@@ -50,6 +55,9 @@ Updated by the LLM after every ingest operation.
 - [[computational-antitrust]] — Appendix A finding: EC enforcement is documentary, not computational.
 - [[ecosystem-theory-of-harm]] — Appendix B finding: EC ecosystem reasoning is emerging but fragmented.
 - [[vibe-coding]] — Karpathy-coined term for building software by prompting AI; the enabling assumption behind these pipelines.
+- [[lazy-obsidian-method]] — Bryce Robbie's low-maintenance recipe assembling existing tools around Karpathy's LLM-wiki idea.
+- [[para-method]] — Projects/Areas/Resources/Archive folder taxonomy; the "Structure" layer.
+- [[maintenance-cadence]] — Automated daily/nightly/weekly recurring jobs; the "lazy unlock."
 
 ## Syntheses
 

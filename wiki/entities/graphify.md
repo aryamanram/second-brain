@@ -2,7 +2,7 @@
 title: "Graphify"
 tags: [tool, knowledge-graph, claude-code, skill, entity]
 date_created: 2026-05-30
-date_updated: 2026-05-30
+date_updated: 2026-06-03
 sources: [raw/papers/Building a Digital Brain for Research.pdf]
 ---
 
@@ -41,9 +41,11 @@ Three passes:
 
 ## Related Pages
 - [[schrepel-digital-brain-for-research]]
+- [[lazy-obsidian-method]]
 - [[knowledge-graph]]
 - [[markitdown]]
 - [[claude-code]]
+- [[qmd]]
 - [[safi-shamsi]]
 - [[leiden-community-detection]]
 - [[god-nodes]]

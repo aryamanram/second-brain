@@ -46,3 +46,12 @@ Chronological record of all wiki operations.
 - Polish 1: added missing [[stanford-university]] backlinks from [[thibault-schrepel]] (Stanford affiliations were plain text).
 - Polish 2: created first synthesis page [[llm-knowledge-base-toolchain]] (wiki/syntheses/) tying together the toolchain (markitdown/graphify/claude-code/obsidian/vibe-coding) and the retrieval-vs-research layers; linked it from [[llm-knowledge-base]] and [[karpathy-vs-schrepel-digital-brain]].
 - Updated index.md (43 pages total; Syntheses section now populated). Re-synced qmd.
+
+## [2026-06-03] ingest | raw/papers/obsidian-lazy-method-brief.pdf
+- Ingested Bryce Robbie's "The Lazy Obsidian Method" field note (2-page PDF).
+- Created source: [[lazy-obsidian-method-brief]].
+- Created entities: [[bryce-robbie]], [[kepano]], [[obsidian-skills]], [[qmd]].
+- Created concepts: [[lazy-obsidian-method]], [[para-method]], [[maintenance-cadence]].
+- Backlinked from existing pages: [[obsidian]], [[graphify]], and the synthesis [[llm-knowledge-base-toolchain]] (added a "packaged instantiation" subsection + tobi/qmd and kepano builders).
+- Notable: the brief names three tools this wiki already uses (Obsidian, Graphify, QMD); gave QMD its own entity page since the wiki depends on it.
+- Updated index.md (51 pages total). Lint clean: 0 broken links, 0 orphans.
