@@ -20,31 +20,8 @@
               "icon": "lucide-file",
               "title": "log"
             }
-          },
-          {
-            "id": "1ed8a9258d75c828",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "raw/papers/Building a Digital Brain for Research.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "Building a Digital Brain for Research"
-            }
-          },
-          {
-            "id": "815cf51fb65d99c0",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
-            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -206,10 +183,12 @@
       "bases:Create new base": false
     }
   },
-  "active": "815cf51fb65d99c0",
+  "active": "d8299191007689ac",
   "lastOpenFiles": [
-    "raw/papers/Building a Digital Brain for Research.pdf",
+    "Untitled.base",
+    "Untitled 1.base",
     "log.md",
+    "raw/papers/Building a Digital Brain for Research.pdf",
     "index.md",
     "wiki/concepts/knowledge-graph.md",
     "double brackets.md",
@@ -241,7 +220,6 @@
     "sources",
     "wiki/syntheses",
     "wiki/concepts",
-    "wiki/entities",
-    "wiki/sources"
+    "wiki/entities"
   ]
 }
