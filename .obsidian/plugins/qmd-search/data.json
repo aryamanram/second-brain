@@ -1,0 +1,21 @@
+{
+  "qmdBinaryPath": "/usr/local/bin/qmd",
+  "collectionName": "",
+  "indexName": null,
+  "fileMask": "**/*.md",
+  "debounceMs": 45000,
+  "enablePeriodicUpdates": true,
+  "periodicUpdateMinutes": 15,
+  "defaultSearchMode": "semantic",
+  "fallbackOnSemanticFailure": true,
+  "fallbackOnZeroResults": false,
+  "showEmbeddingsBanner": true,
+  "autoGenerateEmbeddings": true,
+  "enableRibbonIcon": true,
+  "enableSearchPane": false,
+  "showScoresInResults": true,
+  "lastIndexUpdateTime": null,
+  "lastEmbeddingRunTime": null,
+  "lastSearchMode": null,
+  "lastError": "2026-06-09T02:24:56.426Z: QMD binary not found at: /usr/local/bin/qmd"
+}
