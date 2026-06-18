@@ -11,10 +11,16 @@
             "id": "436e592b08e03192",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "pdf",
+              "state": {
+                "file": "raw/papers/Building a Digital Brain for Research.pdf",
+                "page": 21,
+                "left": -8,
+                "top": 179,
+                "zoom": 2.049019607843137
+              },
+              "icon": "lucide-file-text",
+              "title": "Building a Digital Brain for Research"
             }
           }
         ]
@@ -177,11 +183,15 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "pdf-plus:PDF++: Toggle auto-copy": false,
+      "pdf-plus:PDF++: Toggle auto-focus": false,
+      "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
   "active": "436e592b08e03192",
   "lastOpenFiles": [
+    "raw/books",
     "wiki/concepts/graph-diagnostics.md",
     "raw/articles/Andrej Karpathy.md",
     "raw/articles/Post by @karpathy on X.md",
@@ -191,7 +201,6 @@
     "index.md",
     "CLAUDE.md",
     "Untitled.md",
-    "Untitled",
     "wiki/comparisons/karpathy-vs-schrepel-digital-brain.md",
     "Untitled 1.base",
     "Untitled.base",
@@ -212,7 +221,6 @@
     "wiki/questions/open-questions-llm-knowledge-bases.md",
     "wiki/questions/open-questions-digital-brain-research.md",
     "wiki/entities/university-of-toronto.md",
-    "wiki/entities/thibault-schrepel.md",
     "wiki/questions",
     "wiki/comparisons",
     "sources",
