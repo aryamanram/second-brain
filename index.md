@@ -30,6 +30,19 @@ Updated by the LLM after every ingest operation.
 - [[kepano]] — Steph Ango; creator of Obsidian Skills.
 - [[obsidian-skills]] — Kepano's vault workflow patterns (the "Workflow" layer).
 - [[qmd]] — Markdown search/retrieval tool (by tobi); the search layer, also used by this wiki.
+- [[james-stewart]] — Mathematician; lead author of *Calculus* (the textbook being ingested).
+- [[isaac-newton]] — Co-inventor of calculus (1642–1727).
+- [[gottfried-leibniz]] — Co-inventor of calculus (1646–1716).
+- [[leonhard-euler]] — Euler's method for differential equations (1707–1783).
+- [[johannes-kepler]] — Kepler's Laws of planetary motion (1571–1630).
+- [[william-rowan-hamilton]] — quaternions, origin of the cross product (1805–1865).
+- [[george-green]] — Green's Theorem (1793–1841).
+- [[george-stokes]] — Stokes' Theorem (1819–1903).
+- [[carl-friedrich-gauss]] — the Divergence Theorem (1777–1855).
+
+## Books
+
+- [[stewart-calculus-9e/_hub|Stewart, Calculus (9th Edition)]] — **fully ingested** chapter-by-chapter (vision render): Preview + Ch.1–16, single- and multivariable calculus. See [[stewart-calculus-9e/_progress|progress manifest]]. `raw/books/stewart-calculus-9e.pdf`
 
 ## Concepts
 
@@ -58,6 +71,18 @@ Updated by the LLM after every ingest operation.
 - [[lazy-obsidian-method]] — Bryce Robbie's low-maintenance recipe assembling existing tools around Karpathy's LLM-wiki idea.
 - [[para-method]] — Projects/Areas/Resources/Archive folder taxonomy; the "Structure" layer.
 - [[maintenance-cadence]] — Automated daily/nightly/weekly recurring jobs; the "lazy unlock."
+- [[limit]] — The foundational concept of calculus; $f(x)$ approaching $L$ as $x\to a$ (ε–δ).
+- [[continuity]] — "Limit equals function value"; no break in the graph.
+- [[intermediate-value-theorem]] — A continuous function on $[a,b]$ attains every value between $f(a)$ and $f(b)$.
+- [[squeeze-theorem]] — A function trapped between two others sharing a limit shares that limit.
+- [[derivative]] — Instantaneous rate of change / tangent slope; limit of difference quotients.
+- [[chain-rule]] — Differentiates compositions; reversed, it is $u$-substitution.
+- [[mean-value-theorem]] — Some interior tangent is parallel to the secant; the workhorse of differential calculus.
+- [[antiderivative]] — Reverses differentiation; the indefinite integral $\int f\,dx = F+C$.
+- [[definite-integral]] — A number: the limit of Riemann sums (area under a curve).
+- [[riemann-sum]] — Rectangle-sum approximation whose limit defines the integral.
+- [[fundamental-theorem-of-calculus]] — Differentiation and integration are inverse operations.
+- [[gradient]] — Vector of partial derivatives; direction of steepest ascent (multivariable derivative).
 
 ## Syntheses
 

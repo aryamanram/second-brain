@@ -42,6 +42,7 @@ sources: [raw/papers/attention-is-all-you-need.md]
   - `_hub.md` — the book hub page (overview, table of contents, links to every chapter page).
   - `_progress.md` — the ingest progress/manifest file (see "Book Ingest Workflow"). Underscore-prefixed so it sorts first.
   - `chNN-[chapter-slug].md` — one page per chapter (e.g. `ch03-derivatives.md`).
+  - Link hygiene: `_hub`/`_progress` are NOT globally unique (every book has them), so always link them folder-qualified — e.g. `[[stewart-calculus-9e/_hub|Stewart Calculus 9e]]`, never bare `[[_hub]]`. Chapter files (`chNN-...`) are slugged with enough of the book/topic to stay globally unique.
 - Use lowercase, hyphens for spaces, no special characters.
 
 ## Ingest Workflow
@@ -73,24 +74,35 @@ Books in `raw/books/` are large and often graphics/equation-heavy (textbooks, te
 Large books are ingested **one chapter at a time** so context stays small and the job can be left running (and safely resumed after any interruption). State lives on disk, never only in context.
 
 On first ingest of a book:
-1. Render the table of contents / front matter to find chapter boundaries and page ranges.
+1. Render the table of contents / front matter to find chapter boundaries and page ranges. **Establish and verify the page offset** (printed page number vs. PDF page number) at two well-separated points before trusting any range.
 2. Create the book folder `wiki/sources/[book-slug]/` with:
    - `_hub.md` — overview + full chapter list (each chapter wikilinked, even before it's written).
-   - `_progress.md` — a manifest table: for each chapter, its page range and status (`pending` / `done`), plus a "Next chapter" pointer. This file is the source of truth for where the loop is.
+   - `_progress.md` — the manifest (see "_progress.md is the single source of truth" below).
 3. Append a `book-ingest-start` entry to `log.md`.
 
 Each iteration (one chapter):
-1. Read `_progress.md` to find the next `pending` chapter and its page range.
-2. Render that chapter's pages with `pdftoppm`; Read the images.
-3. Create `chNN-[chapter-slug].md` (summary, key equations in LaTeX, described figures, worked-example takeaways). Create/update relevant `concepts/` and `entities/` pages and wire `[[wikilinks]]` both ways, including to the `_hub.md`.
-4. Update `_progress.md`: mark the chapter `done`, advance the "Next chapter" pointer.
-5. Append a one-line `log.md` entry for the chapter.
-6. Continue to the next chapter, or stop if the human asked for a bounded range.
+1. Read `_progress.md` and pick the next chapter = the **first row whose Status is `pending`**, read top-to-bottom (see authority rule below).
+2. Mark that row `in-progress` in `_progress.md` *before* rendering.
+3. Render that chapter's pages with `pdftoppm` (PDF range taken verbatim from the row); Read the images.
+4. Create `chNN-[chapter-slug].md` (summary, key equations in LaTeX, described figures, worked-example takeaways). The page range printed in the chapter page MUST be copied verbatim from the `_progress.md` row — never re-derive it.
+5. Promote concepts/entities per the **promotion test** below; wire `[[wikilinks]]` both ways, including the folder-qualified link to the hub (see Naming Conventions).
+6. Mark the row `done` in `_progress.md` (only after the page is fully written and linked).
+7. Append a one-line `log.md` entry for the chapter.
+8. If the chapter count since the last embed has reached 4, run `qmd update && qmd embed` so finished chapters become searchable mid-ingest.
+9. Continue to the next chapter, or stop if the human asked for a bounded range. **The loop runs unattended — do not pause to discuss each chapter; surface takeaways only in the per-chapter `log.md` line.**
 
-When all chapters are `done`: update `index.md` (add the hub + notable concept pages), append a `book-ingest-complete` entry to `log.md`, and run `qmd update && qmd embed`.
+When all chapters are `done`: update `index.md` (add the hub + any promoted concept pages), append a `book-ingest-complete` entry to `log.md`, and run a final `qmd update && qmd embed`.
+
+### `_progress.md` is the single source of truth
+- **The Status column is authoritative.** The next chapter to ingest is always the first row whose Status is `pending`. Any "Next chapter" convenience line is non-binding — if it ever disagrees with the first `pending` row, the table wins.
+- **Three statuses:** `pending` → `in-progress` → `done`. Mark `in-progress` immediately before rendering; mark `done` only after the chapter page is fully written and wikilinked.
+- **Page ranges live only here.** Chapter pages copy their range verbatim from the manifest; never re-derive ranges in a chapter page (that causes silent drift).
+
+### Promotion test (concepts/entities)
+Don't promote every term (avoids stub-spam), but don't leave the book an island either. During book ingest, give a term its own `concepts/` or `entities/` page only when it is **(a)** a named theorem/definition a future non-book source would plausibly link to (e.g. "Intermediate Value Theorem", "Squeeze Theorem", "limit", "continuity"), or **(b)** referenced from ≥2 chapters. Authors and notable historical figures (e.g. Newton, Leibniz) always get `entities/` pages per the standard rule. Everything else stays as bold text in the chapter page. Wire promoted pages into the chapter's Related Pages.
 
 ### Resumability
-Because `_progress.md` records exact status on disk, ingest can be killed and resumed at any point — the next run reads `_progress.md` and continues from the first `pending` chapter. Never assume in-context memory of progress.
+Because `_progress.md` records exact status on disk, ingest can be killed and resumed at any point — the next run reads the Status column and continues from the first `pending` row. **If a row is `in-progress` on resume, discard any partial `chNN` page and redo that chapter from scratch.** Never assume in-context memory of progress.
 
 ### Search & reading notes
 - The raw book PDF/EPUB is **not** qmd-indexed (qmd indexes `.md` only), but every per-chapter wiki page is — so the book is searchable through its wiki pages.
@@ -112,6 +124,8 @@ When asked to lint or health-check:
 5. Suggest new questions to investigate or sources to find.
 6. Report findings and offer to fix issues.
 
+For an in-flight book (one with a `_progress.md` containing `pending`/`in-progress` rows): treat forward-links to not-yet-written `pending` chapters as expected-missing (not broken links), and treat the in-progress book folder as expected-absent from `index.md`. Don't report these as lint errors until the book is complete.
+
 ## Rules
 - Never modify files in `raw/`. They are immutable.
 - Always use [[wikilinks]] to connect related concepts.
@@ -128,7 +142,8 @@ This wiki has qmd installed for search. Use it instead of manually scanning file
 - `qmd search "keywords" -c wiki` — BM25 keyword search (fast, exact terms)
 - `qmd search "keywords" -c raw` — Search raw sources
 - `qmd query "natural language question"` — Semantic search with LLM reranking
-- `qmd embed` — Re-index after ingesting new sources (run after every ingest)
+- `qmd update` — Re-scan collection folders and refresh the file index (run before `qmd embed` after adding/changing files)
+- `qmd embed` — Generate/refresh vector embeddings after ingesting new sources (run after every ingest)
 
 **Collections:**
 - `raw` — points to raw/ (immutable sources)

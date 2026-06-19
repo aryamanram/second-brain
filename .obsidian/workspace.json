@@ -4,23 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "90714d7bb9e8f72a",
+        "id": "a098b77668730b53",
         "type": "tabs",
         "children": [
           {
-            "id": "436e592b08e03192",
+            "id": "056293f870c2b0d1",
             "type": "leaf",
             "state": {
-              "type": "pdf",
-              "state": {
-                "file": "raw/papers/Building a Digital Brain for Research.pdf",
-                "page": 21,
-                "left": -8,
-                "top": 179,
-                "zoom": 2.049019607843137
-              },
-              "icon": "lucide-file-text",
-              "title": "Building a Digital Brain for Research"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -189,42 +183,43 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "436e592b08e03192",
+  "active": "056293f870c2b0d1",
   "lastOpenFiles": [
-    "raw/books",
-    "wiki/concepts/graph-diagnostics.md",
-    "raw/articles/Andrej Karpathy.md",
-    "raw/articles/Post by @karpathy on X.md",
+    "Untitled.canvas",
+    "wiki/sources/stewart-calculus-9e/ch01-functions-and-limits.md",
+    "wiki/sources/stewart-calculus-9e/_hub.md",
+    "wiki/concepts/gradient.md",
+    "wiki/concepts/riemann-sum.md",
+    "wiki/concepts/antiderivative.md",
+    "wiki/concepts/mean-value-theorem.md",
+    "wiki/concepts/chain-rule.md",
+    "wiki/concepts/derivative.md",
+    "wiki/entities/carl-friedrich-gauss.md",
+    "wiki/entities/george-stokes.md",
+    "wiki/entities/george-green.md",
+    "wiki/sources/stewart-calculus-9e/ch16-vector-calculus.md",
+    "wiki/sources/stewart-calculus-9e/ch15-multiple-integrals.md",
+    "raw/books/stewart-calculus-9e.pdf",
+    "wiki/sources/stewart-calculus-9e/ch14-partial-derivatives.md",
+    "wiki/sources/stewart-calculus-9e/ch13-vector-functions.md",
+    "wiki/entities/william-rowan-hamilton.md",
+    "wiki/sources/stewart-calculus-9e/ch12-vectors-geometry-of-space.md",
+    "wiki/sources/stewart-calculus-9e/ch11-sequences-series-power-series.md",
+    "wiki/entities/johannes-kepler.md",
+    "wiki/sources/stewart-calculus-9e/ch10-parametric-and-polar.md",
+    "wiki/entities/leonhard-euler.md",
+    "wiki/sources/stewart-calculus-9e/ch09-differential-equations.md",
+    "wiki/sources/stewart-calculus-9e/ch08-further-applications-of-integration.md",
+    "wiki/sources/stewart-calculus-9e/ch07-techniques-of-integration.md",
+    "wiki/sources/stewart-calculus-9e/ch06-inverse-functions.md",
+    "wiki/sources/stewart-calculus-9e",
     "raw/papers/Building a Digital Brain for Research.pdf",
+    "raw/books",
     "raw/papers/obsidian-lazy-method-brief.pdf",
-    "log.md",
-    "index.md",
-    "CLAUDE.md",
-    "Untitled.md",
-    "wiki/comparisons/karpathy-vs-schrepel-digital-brain.md",
     "Untitled 1.base",
     "Untitled.base",
-    "wiki/concepts/knowledge-graph.md",
-    "double brackets.md",
-    "wiki/concepts/maintenance-cadence.md",
-    "wiki/concepts/para-method.md",
-    "wiki/concepts/lazy-obsidian-method.md",
-    "wiki/entities/qmd.md",
-    "wiki/entities/obsidian-skills.md",
-    "wiki/entities/kepano.md",
-    "wiki/entities/bryce-robbie.md",
-    "wiki/sources/lazy-obsidian-method-brief.md",
-    "wiki/syntheses/llm-knowledge-base-toolchain.md",
-    "wiki/sources/wikipedia-andrej-karpathy.md",
-    "wiki/sources/schrepel-digital-brain-for-research.md",
-    "wiki/sources/karpathy-llm-knowledge-bases.md",
-    "wiki/questions/open-questions-llm-knowledge-bases.md",
-    "wiki/questions/open-questions-digital-brain-research.md",
-    "wiki/entities/university-of-toronto.md",
     "wiki/questions",
     "wiki/comparisons",
-    "sources",
-    "wiki/syntheses",
-    "wiki/concepts"
+    "sources"
   ]
 }
